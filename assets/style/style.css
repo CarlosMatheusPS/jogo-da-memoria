@@ -14,13 +14,15 @@ body {
     height: 100vh;
     background-color: #c7cdd7;
 }
+
 /*Gameboard*/
-#gameBoard{
+#gameBoard {
     max-width: 700px;
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
+
 /*Cards*/
 img {
     width: 100px;
@@ -36,6 +38,7 @@ img {
     transform-style: preserve-3d;
     transition: transform 0.5s ease;
 }
+
 .card_front,
 .card_back {
     width: 100%;
@@ -48,9 +51,12 @@ img {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     backface-visibility: hidden;
 }
-.card_front:hover, .card_back:hover{
+
+.card_front:hover,
+.card_back:hover {
     border: 2px solid #101c2c;
 }
+
 .flip {
     transform: rotateY(180deg);
 }

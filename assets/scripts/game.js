@@ -3,6 +3,18 @@ let game = {
     lockmode: false,
     firstCard: null,
     secondCard: null,
+    figures: [
+        "alien",
+        "coracao",
+        "fogo",
+        "foguete",
+        "fruta",
+        "idoso",
+        "leao",
+        "livro",
+        "pipoca",
+        "teatro",
+    ],
 
     setCard: function (id) {
 
@@ -42,22 +54,11 @@ let game = {
         this.clearCards();
     },
 
-    checkGameOver(){
-        return this.cards.filter(card=>!card.flipped).length == 0;
+    checkGameOver() {
+        return this.cards.filter(card => !card.flipped).length == 0;
     },
 
-    figures: [
-        "alien",
-        "coracao",
-        "fogo",
-        "foguete",
-        "fruta",
-        "idoso",
-        "leao",
-        "livro",
-        "pipoca",
-        "teatro",
-    ],
+
 
     cards: null,
 
@@ -99,4 +100,3 @@ let game = {
         return cards
     },
 }
-
